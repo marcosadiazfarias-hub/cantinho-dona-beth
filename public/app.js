@@ -2,7 +2,7 @@
  * Configurações Oficiais de Produção - Cantinho da Dona Beth
  * Para alterar o telefone quando o chip novo chegar, edite `numeroWhatsAppAtivo` abaixo e faça o deploy.
  */
-const numeroWhatsAppAtivo = '5548991372895';
+const numeroWhatsAppAtivo = '5548988044370';
 const dataInauguracaoISO = '2026-12-01T08:00:00-03:00'; // 01 de Dezembro de 2026 às 08h
 const ENDERECO_OFICIAL = 'R. Adelina Vargas Petzold, 118 Casa 2 - Bairro Nova Palhoça, Palhoça/SC';
 
