@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-creme: #FDFBF7;
+  --bg-bege: #F4E8D8;
+  --marrom-cafe: #4A2E1B;
+  --vermelho-la: #9E2A2B;
+  --dourado-agulha: #C89B57;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-creme);
+  color: var(--marrom-cafe);
+  background-image: radial-gradient(#C89B57 0.6px, transparent 0.6px);
+  background-size: 26px 26px;
+}
+
+h1, h2, h3, .font-brand {
+  font-family: 'Fredoka', sans-serif;
+}
+
+.stitch-border {
+  border: 2px dashed var(--vermelho-la);
+}
+
+.stitch-card {
+  position: relative;
+}
+
+.stitch-card::after {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1.5px dashed rgba(158, 42, 43, 0.28);
+  border-radius: 1rem;
+  pointer-events: none;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.float-badge {
+  animation: floatSlow 3.5s ease-in-out infinite;
+}

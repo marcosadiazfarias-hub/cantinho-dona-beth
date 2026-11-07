@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inauguração 01 de Dezembro | Cantinho da Dona Beth — Costura, Lãs e Aviamentos</title>
+  <meta name="description" content="Consertos de roupas, barras de calça, troca de zíper, peças em lã e aviamentos na R. Adelina Vargas Petzold, 118 Casa 2 - Bairro Nova Palhoça, Palhoça/SC. Inauguração dia 01 de Dezembro!" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            creme: '#FDFBF7',
+            bege: '#F4E8D8',
+            marrom: '#4A2E1B',
+            marromClaro: '#6E472B',
+            carmim: '#9E2A2B',
+            carmimHover: '#7D2021',
+            dourado: '#C89B57',
+            whats: '#25D366',
+            whatsEscuro: '#1DA851'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-carmim selection:text-white">
+
+  <!-- Definição Única do Medalhão Ilustrado da Dona Beth (Fallback SVG) -->
+  <svg class="hidden" aria-hidden="true">
+    <symbol id="dona-beth-emblem" viewBox="0 0 220 220">
+      <circle cx="110" cy="110" r="104" fill="#F4E8D8" stroke="#4A2E1B" stroke-width="5"/>
+      <circle cx="110" cy="110" r="95" fill="none" stroke="#9E2A2B" stroke-width="2.5" stroke-dasharray="7 6"/>
+      <circle cx="96" cy="40" r="27" fill="#D9D9D9" stroke="#4A2E1B" stroke-width="3.5"/>
+      <path d="M78 36 Q96 24 114 38" fill="none" stroke="#B5B5B5" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M52 192 C52 146, 168 146, 168 192 Z" fill="#FFFFFF" stroke="#4A2E1B" stroke-width="4"/>
+      <path d="M90 145 L110 163 L130 145" fill="none" stroke="#4A2E1B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="110" cy="158" r="4.5" fill="#C89B57" stroke="#4A2E1B" stroke-width="1.5"/>
+      <circle cx="110" cy="100" r="39" fill="#E6B89C" stroke="#4A2E1B" stroke-width="3.8"/>
+      <path d="M71 95 C69 58, 151 58, 149 95 C140 73, 80 73, 71 95 Z" fill="#E2E2E2" stroke="#4A2E1B" stroke-width="3.5"/>
+      <circle cx="71" cy="112" r="5" fill="#FFFFFF" stroke="#4A2E1B" stroke-width="2"/>
+      <circle cx="71" cy="120" r="6.5" fill="#FFFFFF" stroke="#4A2E1B" stroke-width="2"/>
+      <path d="M88 92 Q96 86 103 92" fill="none" stroke="#4A2E1B" stroke-width="3" stroke-linecap="round"/>
+      <path d="M117 92 Q124 86 132 92" fill="none" stroke="#4A2E1B" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="96" cy="100" r="3.8" fill="#4A2E1B"/>
+      <circle cx="124" cy="100" r="3.8" fill="#4A2E1B"/>
+      <path d="M94 116 Q110 129 126 116 Z" fill="#9E2A2B" stroke="#4A2E1B" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M98 118 Q110 123 122 118" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="116" cy="172" r="24" fill="#9E2A2B" stroke="#4A2E1B" stroke-width="3.5"/>
+      <path d="M98 162 Q116 148 134 166 M96 174 Q116 160 136 178 M102 186 Q118 174 132 188" fill="none" stroke="#7D2021" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="138" y1="158" x2="174" y2="102" stroke="#C89B57" stroke-width="4.5" stroke-linecap="round"/>
+      <line x1="138" y1="158" x2="174" y2="102" stroke="#4A2E1B" stroke-width="1.2" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <!-- Barra de Topo Institucional (Sem botões de configuração) -->
+  <div class="bg-marrom text-creme text-xs py-2.5 px-4 border-b border-dourado/30">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center sm:justify-between gap-2">
+      <div class="flex items-center gap-2 font-medium text-center sm:text-left">
+        <span class="inline-block w-2 h-2 rounded-full bg-whats animate-pulse shrink-0"></span>
+        <span>📍 <strong>R. Adelina Vargas Petzold, 118 Casa 2</strong> — Nova Palhoça, Palhoça/SC</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-2 text-bege text-[11px] font-semibold">
+        <span>🗓️ Inauguração: 01 de Dezembro</span>
+        <span>•</span>
+        <span>Atendimento na Edícula (Fundos)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cabeçalho Principal -->
+  <header class="max-w-6xl w-full mx-auto px-4 sm:px-6 pt-5 pb-3 flex items-center justify-between">
+    <div class="flex items-center gap-3.5">
+      <div id="header-logo-container" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full shadow-md shrink-0 overflow-hidden bg-bege flex items-center justify-center">
+        <img src="./assets/logo-beth.jpg" alt="Cantinho da Dona Beth" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <svg style="display:none" class="w-full h-full"><use href="#dona-beth-emblem"></use></svg>
+      </div>
+      <div>
+        <span class="inline-block text-[11px] font-bold uppercase tracking-widest text-carmim bg-carmim/10 px-2.5 py-0.5 rounded-full mb-1">
+          Inauguração 01 de Dezembro
+        </span>
+        <h1 class="text-2xl sm:text-3xl font-bold text-marrom leading-none">
+          Cantinho da Dona Beth
+        </h1>
+        <p class="text-xs sm:text-sm font-medium text-marromClaro mt-0.5">
+          Costura, Lãs e Aviamentos • Nova Palhoça
+        </p>
+      </div>
+    </div>
+
+    <a href="#lista-vip" class="hidden sm:inline-flex items-center gap-2 bg-marrom hover:bg-marromClaro text-creme font-semibold text-sm px-4 py-2.5 rounded-full shadow-sm transition">
+      🎁 Garantir 15% OFF na Estreia
+    </a>
+  </header>
+
+  <!-- Conteúdo Principal (Hero + Lista VIP) -->
+  <main class="max-w-6xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+
+      <!-- Coluna Esquerda: História, Endereço, Contador e Benefícios -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <div class="inline-flex items-center gap-2 bg-bege border border-dourado/50 text-marrom px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-sm float-badge">
+          <span>🏡</span>
+          <span>Novo ateliê na <strong>R. Adelina Vargas Petzold, 118 Casa 2</strong>!</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-bold text-marrom leading-[1.15]">
+          Chega de ir até o Centro só para fazer uma <span class="text-carmim underline decoration-dashed decoration-2 underline-offset-4">barra de calça</span> ou trocar um zíper.
+        </h2>
+
+        <p class="text-base sm:text-lg text-marromClaro leading-relaxed">
+          A partir do dia <strong>01 de dezembro</strong>, a <strong>Dona Elizabeth</strong> abre as portas do seu cantinho na edícula de casa, aqui mesmo no <strong>Nova Palhoça</strong>, para cuidar das roupas da sua família com aquele capricho de mãe, além de peças artesanais em lã e aviamentos para emergências do dia a dia.
+        </p>
+
+        <!-- Card de Endereço Oficial + Mapa + Copiar -->
+        <div class="bg-white/95 backdrop-blur-sm border-2 border-dourado/40 rounded-2xl p-4 sm:p-5 shadow-sm space-y-3">
+          <div class="flex items-start gap-3">
+            <div class="bg-bege text-carmim p-2.5 rounded-xl text-xl shrink-0">📍</div>
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-carmim">Localização Oficial no Bairro</span>
+              <h3 class="text-base sm:text-lg font-bold text-marrom">
+                R. Adelina Vargas Petzold, 118 Casa 2
+              </h3>
+              <p class="text-xs sm:text-sm text-marromClaro">
+                Bairro Nova Palhoça, Palhoça/SC • <strong>Atendimento nos fundos (Edícula)</strong>
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Adelina+Vargas+Petzold,+118+Casa+2,+Nova+Palhoca,+Palhoca+-+SC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold bg-marrom hover:bg-marromClaro text-creme px-3.5 py-2 rounded-lg transition">
+              🗺️ Ver no Google Maps
+            </a>
+            <button id="btn-copy-address" type="button" onclick="copyAddress()" class="inline-flex items-center gap-1.5 text-xs font-bold bg-bege hover:bg-dourado/30 text-marrom px-3.5 py-2 rounded-lg transition cursor-pointer">
+              📋 Copiar Endereço
+            </button>
+          </div>
+        </div>
+
+        <!-- Contador Regressivo de Inauguração (01 de Dezembro) -->
+        <div class="bg-white/90 backdrop-blur-sm border border-dourado/40 rounded-2xl p-4 sm:p-5 shadow-sm">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-marromClaro flex items-center gap-1.5">
+              ⏳ Contagem Regressiva para Abertura:
+            </span>
+            <span id="launch-date-badge" class="text-xs font-bold text-carmim bg-carmim/10 px-2.5 py-0.5 rounded-md">
+              01 de Dezembro às 08h
+            </span>
+          </div>
+          <div class="grid grid-cols-4 gap-2 sm:gap-4 text-center">
+            <div class="bg-bege/80 rounded-xl py-2.5 px-2 border border-dourado/30">
+              <div id="cd-days" class="text-2xl sm:text-3xl font-bold text-marrom font-brand">23</div>
+              <div class="text-[11px] font-semibold uppercase text-marromClaro">Dias</div>
+            </div>
+            <div class="bg-bege/80 rounded-xl py-2.5 px-2 border border-dourado/30">
+              <div id="cd-hours" class="text-2xl sm:text-3xl font-bold text-marrom font-brand">15</div>
+              <div class="text-[11px] font-semibold uppercase text-marromClaro">Horas</div>
+            </div>
+            <div class="bg-bege/80 rounded-xl py-2.5 px-2 border border-dourado/30">
+              <div id="cd-mins" class="text-2xl sm:text-3xl font-bold text-marrom font-brand">59</div>
+              <div class="text-[11px] font-semibold uppercase text-marromClaro">Minutos</div>
+            </div>
+            <div class="bg-bege/80 rounded-xl py-2.5 px-2 border border-dourado/30">
+              <div id="cd-secs" class="text-2xl sm:text-3xl font-bold text-carmim font-brand">40</div>
+              <div class="text-[11px] font-semibold uppercase text-marromClaro">Segundos</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Quem é a Dona Beth -->
+        <div class="bg-bege/70 border border-dourado/40 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-4">
+          <div id="hero-logo-container" class="w-24 h-24 rounded-full shrink-0 shadow-md bg-creme overflow-hidden flex items-center justify-center">
+            <img src="./assets/logo-beth.jpg" alt="Dona Elizabeth" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <svg style="display:none" class="w-full h-full"><use href="#dona-beth-emblem"></use></svg>
+          </div>
+          <div class="space-y-1.5 text-center sm:text-left">
+            <h3 class="text-lg font-bold text-marrom">Feito pelas mãos da Dona Elizabeth</h3>
+            <p class="text-xs sm:text-sm text-marromClaro leading-relaxed">
+              Com anos de dedicação às agulhas, linhas e lãs, a Dona Beth prepara a edícula na <strong>R. Adelina Vargas Petzold, 118 Casa 2</strong> para oferecer um serviço de confiança, com hora marcada, preço justo de vizinhança e acabamento impecável.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Pilares do Que Vem Por Aí -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+          <div class="bg-white p-4 rounded-xl border border-bege shadow-sm flex items-start gap-3">
+            <span class="text-2xl bg-bege p-2 rounded-lg">👖</span>
+            <div>
+              <h4 class="font-bold text-marrom text-sm">Barras & Ajustes Rápidos</h4>
+              <p class="text-xs text-marromClaro mt-0.5">Barra original de jeans, calça social, vestidos, ajuste de cintura e mangas.</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-bege shadow-sm flex items-start gap-3">
+            <span class="text-2xl bg-bege p-2 rounded-lg">🧥</span>
+            <div>
+              <h4 class="font-bold text-marrom text-sm">Troca de Zíper e Reparos</h4>
+              <p class="text-xs text-marromClaro mt-0.5">Recupere jaquetas, calças, saias, uniformes e mochilas escolares paradas.</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-bege shadow-sm flex items-start gap-3">
+            <span class="text-2xl bg-bege p-2 rounded-lg">🧣</span>
+            <div>
+              <h4 class="font-bold text-marrom text-sm">Peças em Lã & Tricô</h4>
+              <p class="text-xs text-marromClaro mt-0.5">Toucas, cachecóis, casaquinhos de bebê e mantas feitas à mão sob encomenda.</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-bege shadow-sm flex items-start gap-3">
+            <span class="text-2xl bg-bege p-2 rounded-lg">🧵</span>
+            <div>
+              <h4 class="font-bold text-marrom text-sm">Armarinho de Socorro</h4>
+              <p class="text-xs text-marromClaro mt-0.5">Linhas, agulhas, elásticos, botões, fitas, colas e lãs sem sair do bairro.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Coluna Direita: Card de Captura da Lista VIP -->
+      <div id="lista-vip" class="lg:col-span-5 lg:sticky lg:top-6">
+        <div class="bg-white rounded-3xl shadow-xl border-2 border-marrom/10 p-6 sm:p-8 stitch-card">
+          
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="bg-carmim text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+              🎁 Estreia 01/12
+            </span>
+            <span class="text-xs font-bold text-marromClaro">
+              Vagas limitadas
+            </span>
+          </div>
+
+          <h3 class="text-2xl sm:text-3xl font-bold text-marrom leading-tight">
+            Entre na Lista VIP dos Vizinhos
+          </h3>
+          <p class="text-xs sm:text-sm text-marromClaro mt-1.5">
+            Cadastre-se gratuitamente para ser avisado(a) no dia <strong>01 de dezembro</strong> e garanta <strong>2 presentes especiais</strong> na nossa semana de estreia:
+          </p>
+
+          <!-- Box dos Presentes -->
+          <div class="my-4 bg-bege/60 rounded-xl p-3.5 border border-dourado/40 space-y-2 text-xs sm:text-sm">
+            <div class="flex items-center gap-2 font-semibold text-marrom">
+              <span class="text-carmim font-bold">✓</span>
+              <span><strong>15% de Desconto</strong> no seu 1º conserto ou encomenda em lã</span>
+            </div>
+            <div class="flex items-center gap-2 font-semibold text-marrom">
+              <span class="text-carmim font-bold">✓</span>
+              <span><strong>Brinde:</strong> 1 pregação de botão ou pequeno ponto solto grátis</span>
+            </div>
+          </div>
+
+          <!-- Barra de Progresso dos 20 Primeiros -->
+          <div class="mb-5">
+            <div class="flex justify-between text-[11px] font-bold text-marromClaro mb-1">
+              <span>Cupons da 1ª Semana reservados</span>
+              <span id="vagas-badge" class="text-carmim">7 de 20 disponíveis</span>
+            </div>
+            <div class="w-full h-2.5 bg-bege rounded-full overflow-hidden">
+              <div id="vagas-bar" class="h-full bg-carmim rounded-full transition-all duration-500" style="width: 65%"></div>
+            </div>
+          </div>
+
+          <!-- Formulário Interativo -->
+          <form id="vip-form" onsubmit="enviarParaListaVip(event)" class="space-y-4 relative z-10">
+            <div>
+              <label for="vip-nome" class="block text-xs font-bold text-marrom mb-1">
+                Seu Nome *
+              </label>
+              <input
+                type="text"
+                id="vip-nome"
+                required
+                maxlength="60"
+                placeholder="Ex: Ana Paula (moradora do Nova Palhoça)"
+                class="w-full px-3.5 py-2.5 rounded-xl border border-marrom/20 bg-creme text-marrom text-sm focus:outline-none focus:ring-2 focus:ring-carmim"
+              />
+            </div>
+
+            <div>
+              <label for="vip-interesse" class="block text-xs font-bold text-marrom mb-1">
+                Qual serviço você mais precisa hoje? *
+              </label>
+              <select
+                id="vip-interesse"
+                class="w-full px-3.5 py-2.5 rounded-xl border border-marrom/20 bg-creme text-marrom text-sm focus:outline-none focus:ring-2 focus:ring-carmim"
+              >
+                <option value="Barra de calça (jeans ou tecido)">👖 Fazer barra de calça (jeans ou social)</option>
+                <option value="Troca de zíper (calça, jaqueta ou mochila)">🧥 Trocar zíper de roupa ou mochila</option>
+                <option value="Ajustes e consertos gerais de costura">🪡 Ajustes de cintura, mangas ou rasgos</option>
+                <option value="Encomenda de peças em lã / tricô">🧣 Encomendar peça artesanal em lã/tricô</option>
+                <option value="Compra de linhas, lãs e aviamentos">🧶 Comprar linhas, agulhas ou aviamentos</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="vip-obs" class="block text-xs font-bold text-marrom mb-1">
+                Tem alguma peça parada no armário? (Opcional)
+              </label>
+              <input
+                type="text"
+                id="vip-obs"
+                maxlength="100"
+                placeholder="Ex: Tenho 2 calças jeans para fazer barra"
+                class="w-full px-3.5 py-2.5 rounded-xl border border-marrom/20 bg-creme text-marrom text-sm focus:outline-none focus:ring-2 focus:ring-carmim"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-whats hover:bg-whatsEscuro text-white font-bold text-base py-3.5 px-5 rounded-xl shadow-lg hover:shadow-xl transition flex items-center justify-center gap-2.5 cursor-pointer"
+            >
+              <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+              </svg>
+              <span>Entrar na Lista VIP pelo WhatsApp</span>
+            </button>
+
+            <p class="text-[11px] text-center text-marromClaro">
+              🔒 Rápido e sem spam. Você receberá seu código de desconto direto no WhatsApp.
+            </p>
+          </form>
+
+          <!-- Botão de Compartilhar com Vizinho -->
+          <div class="mt-5 pt-4 border-t border-bege flex items-center justify-between gap-2 relative z-10">
+            <span class="text-xs text-marromClaro font-medium">Conhece alguém no bairro que precisa?</span>
+            <button
+              type="button"
+              onclick="compartilharComVizinho()"
+              class="text-xs font-bold text-carmim hover:underline flex items-center gap-1 cursor-pointer"
+            >
+              📲 Avisar um vizinho no WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Seção Como Funciona o Atendimento na Edícula -->
+    <section class="mt-14 bg-white rounded-3xl p-6 sm:p-8 border border-dourado/30 shadow-sm">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-carmim">Praticidade e Segurança</span>
+        <h3 class="text-2xl font-bold text-marrom mt-1">Como vai funcionar o nosso atendimento?</h3>
+        <p class="text-xs sm:text-sm text-marromClaro mt-1">
+          Localizado na <strong>R. Adelina Vargas Petzold, 118 Casa 2</strong>, nosso espaço na edícula dos fundos foi pensado para receber você com privacidade e agilidade:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-creme p-5 rounded-2xl border border-bege text-center space-y-2">
+          <div class="w-10 h-10 rounded-full bg-carmim text-white font-bold flex items-center justify-center mx-auto font-brand text-lg">1</div>
+          <h4 class="font-bold text-marrom text-base">Chame no WhatsApp ou Toque a Campainha</h4>
+          <p class="text-xs text-marromClaro leading-relaxed">
+            Você pode mandar foto da roupa pelo WhatsApp para pré-orçamento ou tocar a campainha exclusiva no portão da <strong>Casa 2</strong>.
+          </p>
+        </div>
+        <div class="bg-creme p-5 rounded-2xl border border-bege text-center space-y-2">
+          <div class="w-10 h-10 rounded-full bg-carmim text-white font-bold flex items-center justify-center mx-auto font-brand text-lg">2</div>
+          <h4 class="font-bold text-marrom text-base">Acesso Lateral até a Edícula</h4>
+          <p class="text-xs text-marromClaro leading-relaxed">
+            Nosso ateliê fica na edícula dos fundos, com provador e espelho para a Dona Beth marcar a barra ou ajuste no seu corpo com precisão.
+          </p>
+        </div>
+        <div class="bg-creme p-5 rounded-2xl border border-bege text-center space-y-2">
+          <div class="w-10 h-10 rounded-full bg-carmim text-white font-bold flex items-center justify-center mx-auto font-brand text-lg">3</div>
+          <h4 class="font-bold text-marrom text-base">Aviso de Roupa Pronta no Celular</h4>
+          <p class="text-xs text-marromClaro leading-relaxed">
+            Assim que o conserto ou peça de lã estiver pronta e revisada, avisamos você no WhatsApp. Pagamento fácil via Pix, dinheiro ou cartão.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Confirmação com Cupom Copiável -->
+  <div id="success-modal" class="fixed inset-0 bg-marrom/70 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div class="bg-creme rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border-2 border-carmim text-center space-y-4">
+      <div class="w-16 h-16 rounded-full bg-whats/15 text-whats flex items-center justify-center mx-auto text-3xl">
+        🎉
+      </div>
+      <h4 class="text-2xl font-bold text-marrom">Cupom Reservado!</h4>
+      <p class="text-xs sm:text-sm text-marromClaro">
+        Guardamos o seu código de vizinho VIP! Se a janela do WhatsApp não abriu automaticamente, copie seu cupom abaixo e clique para enviar:
+      </p>
+      <div class="bg-bege border-2 border-dashed border-carmim rounded-xl p-3 flex items-center justify-between">
+        <span class="font-brand text-lg font-bold text-carmim tracking-wider">DONABETH15</span>
+        <button onclick="copiarCupom()" class="bg-marrom text-creme text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-marromClaro transition cursor-pointer">
+          Copiar Código
+        </button>
+      </div>
+      <p id="copy-feedback" class="text-[11px] text-marromClaro font-medium">
+        Válido na semana de estreia (a partir de 01/12) na R. Adelina Vargas Petzold, 118 Casa 2.
+      </p>
+      <div class="flex flex-col gap-2 pt-2">
+        <button onclick="reabrirWhatsAppModal()" class="w-full bg-whats hover:bg-whatsEscuro text-white font-bold py-3 rounded-xl text-sm transition cursor-pointer">
+          Confirmar no WhatsApp da Dona Beth
+        </button>
+        <button onclick="fecharModalSucesso()" class="w-full text-xs text-marromClaro hover:underline py-1.5 cursor-pointer">
+          Voltar para a página
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-marrom text-bege mt-12 py-8 px-4 border-t-4 border-carmim">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        <p class="font-brand text-lg font-bold text-creme">Cantinho da Dona Beth — Costura, Lãs e Aviamentos</p>
+        <p class="text-xs text-bege/80 mt-0.5">
+          📍 R. Adelina Vargas Petzold, 118 Casa 2 — Bairro Nova Palhoça, Palhoça/SC (Atendimento na Edícula)
+        </p>
+      </div>
+      <div class="text-xs space-y-1">
+        <p id="footer-phone-display" class="font-bold text-creme">WhatsApp: +55 (48) 99137-2895</p>
+        <p class="text-bege/70">© 2026 Cantinho da Dona Beth. Inauguração em 01/12/2026.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <button
+    onclick="abrirWhatsAppDireto()"
+    aria-label="Chamar no WhatsApp"
+    class="fixed bottom-5 right-5 z-40 bg-whats hover:bg-whatsEscuro text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-xl flex items-center gap-2 transition hover:scale-105 cursor-pointer"
+  >
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
+    </svg>
+    <span class="hidden sm:inline text-xs font-bold">Falar com a Dona Beth</span>
+  </button>
+
+  <script src="./app.js"></script>
+</body>
+</html>
